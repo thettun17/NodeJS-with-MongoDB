@@ -1,0 +1,25 @@
+{
+  "name": "nodejs_express",
+  "version": "1.0.0",
+  "description": "Coding Test for DinDinn",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon run aap.js"
+  },
+  "author": "Thet Tun",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express-session": "^1.15.6",
+    "connect-mongodb-session": "^2.0.3",
+    "mongodb": "^3.1.6",
+    "ejs": "^2.6.1",
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.8.1"
+  }
+}

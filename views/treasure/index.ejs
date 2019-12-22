@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/forms.css">
+<link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <% if(game) { %>
+            <script>
+                swal("Win!", "You Win $<%= windata.amt %>!", "success")
+                .then( result => {
+                    window.location.pathname = '/';
+                });    
+            </script>
+            <% } %>
+            <% if(!game) { %>
+                <script>
+                    swal("Not Win!", "Please Try Again", "error")
+                    .then( result => {
+                        window.location.pathname = '/';
+                    });    
+                </script>
+                <% } %>
+            </main>
+            <%- include('../includes/end.ejs') %>

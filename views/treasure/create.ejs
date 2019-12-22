@@ -1,0 +1,21 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+    <main>
+        <form class="login-form" action="/" method="POST">
+            <div class="form-control">
+                <label for="latitude">Latitude</label>
+                <input type="text" name="latitude" id="latitude">
+            </div>
+            <div class="form-control">
+                <label for="longitude">Longitude</label>
+                <input type="text" name="longitude" id="longitude">
+            </div>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>
